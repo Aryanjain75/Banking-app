@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav i {
+    font-size: 24px;
+}
+
+#logout {
+    cursor: pointer;
+    margin-right: 60px;
+}
+
+#logout:hover {
+    color: #f5a623;
+}
+
+h2 {
+    margin-top: 80px; 
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+}
+
+.content {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-detail, .transaction-form {
+    margin-bottom: 20px;
+}
+.transection{
+    border:2px solid black;
+}
+.transaction-form input,transaction-form select {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: calc(100% - 20px);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.transaction-form button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #4CAF50;
+}
+
+/* Styling for the transaction details container */
+#transaction-details {
+margin: 20px 0;
+overflow-x: auto; /* Allows horizontal scrolling if the table is too wide */
+}
+
+/* Styling for the transaction table */
+.transaction-table {
+width: 100%;
+border-collapse: collapse;
+font-family: Arial, sans-serif;
+}
+
+/* Styling for table headers */
+.transaction-table th {
+background-color: #4CAF50;
+color: white;
+padding: 10px;
+text-align: left;
+border-bottom: 2px solid #ddd;
+}
+
+/* Styling for table rows */
+.transaction-table td {
+padding: 10px;
+border-bottom: 1px solid #ddd;
+}
+
+/* Zebra striping for rows */
+.transaction-table tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+/* Highlight on hover */
+.transaction-table tr:hover {
+background-color: #e9e9e9;
+}
+
+/* Responsive behavior: make the table full-width on smaller screens */
+@media screen and (max-width: 600px) {
+.transaction-table th, .transaction-table td {
+display: block;
+text-align: right;
+}
+.transaction-table th::after, .transaction-table td::after {
+content: ':';
+padding-left: 5px;
+}
+.transaction-table th {
+border-bottom: none;
+}
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to external CSS file -->
+    <link rel="stylesheet" href="http://localhost:5000/adminui">
+</head>
+<body>
+    <nav>
+       <div style="gap:5px">
+        <a href="http://localhost:5000/entry"><i class="fa-solid fa-user-pen"></i></a>
+        <a href="http://localhost:5000/transaction"><i class="fa-solid fa-landmark"></i></a>
+       </div>
+        <h1>Admin Panel</h1>
+        <div id="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>User Management</h2>
+        <hr>
+        <div id="user-details">
+            <!-- User details will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/43a4d58aa7.js" crossorigin="anonymous"></script>
+
+    <script src="http://localhost:5000/adminjs">
+                 </script>
+</body>
+</html>

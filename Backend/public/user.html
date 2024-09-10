@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        nav {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        nav i {
+            font-size: 24px;
+        }
+
+        #logout {
+            cursor: pointer;
+        }
+
+        #logout:hover {
+            color: #f5a623;
+        }
+
+        h2 {
+            margin-top: 80px; /* Adjust margin to account for fixed nav bar */
+            color: #333;
+            font-size: 2em;
+            text-align: center;
+        }
+        h1 {
+            color: white;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        
+
+        #user-details {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-detail {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .user-actions {
+            margin-top: 10px;
+        }
+
+        .user-actions button {
+            margin-right: 10px;
+            padding: 5px 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .update-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .delete-btn {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .edit-form {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .edit-form input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+        }
+
+        .edit-form button {
+            padding: 5px 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+
+        .save-btn {
+            background-color: #4CAF50;
+        }
+
+        .cancel-btn {
+            background-color: #f44336;
+        }
+        #logout{
+            margin-right: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="gap:5px">
+            <a href="http://localhost:5000/entry"><i class="fa-solid fa-user-pen"></i></a>
+            <a href="http://localhost:5000/transaction"><i class="fa-solid fa-landmark"></i></a>
+           </div>
+            <h1>User Panel</h1>
+        <div id="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+    </nav>
+    <h2>user Panel</h2>
+    <div id="user-details">
+        <!-- User details will be inserted here -->
+    </div>
+
+    <script src="https://kit.fontawesome.com/43a4d58aa7.js" crossorigin="anonymous"></script>
+    <script src="http://localhost:5000/userjs"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Registration</title>
+    <link rel="stylesheet" href="http://localhost:5000/registerui">
+</head>
+<body>
+    <form id="registerForm" method="post">
+        <h1>Bank Account Registration</h1>
+
+        <!-- Full Name -->
+        <label for="account_name">Full Name:</label>
+        <input type="text" id="account_name" name="account_name">
+        <div class="error" id="nameError">Please enter your full name.</div>
+
+        <!-- Account Type -->
+        <label for="account_type">Account Type:</label>
+        <select id="account_type" name="account_type">
+            <option value="" disabled selected>Select Account Type</option>
+            <option value="savings">Savings</option>
+            <option value="current">Current</option>
+            <option value="fixed_deposit">Fixed Deposit</option>
+        </select>
+        <div class="error" id="typeError">Please select an account type.</div>
+
+        <!-- Initial Deposit -->
+        <label for="balance">Initial Deposit:</label>
+        <input type="number" id="balance" name="balance" min="0">
+        <div class="error" id="balanceError">Please enter a valid deposit amount.</div>
+
+        <!-- Branch Name -->
+        <label for="branch_name">Branch Name:</label>
+        <input type="text" id="branch_name" name="branch_name">
+        <div class="error" id="branchError">Please enter the branch name.</div>
+
+        <!-- Contact Number -->
+        <label for="contact_number">Contact Number:</label>
+        <input type="tel" id="contact_number" name="contact_number" pattern="^[0-9]{10}$">
+        <div class="error" id="contactError">Please enter a valid 10-digit contact number.</div>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <div class="error" id="emailError">Please enter a valid email address.</div>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8">
+        <div class="error" id="passwordError">Password must be at least 8 characters long.</div>
+
+        <!-- Confirm Password -->
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password">
+        <div class="error" id="confirmPasswordError">Passwords do not match.</div>
+
+        <!-- User Status (Employee/Customer) -->
+        <label for="userstatus">User Status:</label>
+        <select id="userstatus" name="userstatus">
+            <option value="" disabled selected>Select Status</option>
+            <option value="user">Customer</option>
+            <option value="admin">Employee</option>
+        </select>
+        <div class="error" id="statusError">Please select your status.</div>
+
+        <!-- Terms and Conditions -->
+        <label style="display:flex;">
+            <input style="width:fit-content" type="checkbox" id="terms" name="terms">
+            I agree to the <a href="#" target="_blank">terms and conditions</a>.
+        </label>
+        <div class="error" id="termsError">You must agree to the terms and conditions.</div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="http://localhost:5000/registerjs">
+                
+    </script>
+</body>
+</html>

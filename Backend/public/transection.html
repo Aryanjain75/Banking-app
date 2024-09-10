@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Panel</title>
+    <link rel="stylesheet" href="http://localhost:5000/transectionui">
+</head>
+<body>
+    <nav>
+        <div style="gap:5px">
+            <a href="http://localhost:5000/entry"><i class="fa-solid fa-user-pen"></i></a>
+            <a href="http://localhost:5000/transaction"><i class="fa-solid fa-landmark"></i></a>
+        </div>
+        <h1>Transaction Panel</h1>
+        <div id="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+    </nav>
+
+    <h2>Manage Transactions</h2>
+    <div class="content">
+        <div id="transaction-details" class="transaction-detail">
+            <!-- Transaction details will be displayed here -->
+        </div>
+        <div class="transaction-form">
+            <h3>Create New Transaction</h3>
+            <select id="to-account">
+                <option value="">Select To Account</option>
+            </select>
+            <input type="number" id="amount" placeholder="Amount" />
+            <button id="create-transaction">Make Transaction</button>
+        </div>
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/43a4d58aa7.js" crossorigin="anonymous"></script>
+    <script src="http://localhost:5000/transectionjs"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="http://localhost:5000/loginui">
+    
+</head>
+<body>
+    <form id="loginForm">
+        <h1>Login</h1>
+
+        <!-- Account Number -->
+        <label for="account_number">Account Number:</label>
+        <input type="text" id="account_number" name="account_number" >
+        <div class="error" id="accountNumberError">Please enter a valid account number.</div>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" >
+        <div class="error" id="passwordError">Password must be at least 8 characters long and contain at least one letter and one number.</div>
+
+        <button type="submit">Login</button>
+        Do not have account<a href="http://localhost:5000/register">Register</a>
+
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="http://localhost:5000/loginjs"></script>
+</body>
+</html>
