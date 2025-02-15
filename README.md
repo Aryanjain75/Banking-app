@@ -151,8 +151,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Feel free to reach out for collaborations or inquiries:
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
+- **Email**: jainaryanjain00@gmail.com(mailto:jainaryanjain00@gmail.com)
+- **LinkedIn**: [((https://www.linkedin.com/in/aryanjaincoder/))](https://www.linkedin.com/in/aryanjaincoder/)
 - **GitHub**: [Aryanjain75](https://github.com/Aryanjain75)
 
 ---
